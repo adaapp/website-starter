@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Website Forms Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../style/main.css"
+    />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Forms</h1>
+        <h2>Website Subtitle</h2>
+        <nav>
+          <ul>
+            <li><a href="#section-one" title="Section 1">Basic form</a></li>
+            <li><a href="#section-two" title="Section 2">Form with GET</a></li>
+            <li><a href="#section-three" title="Section 3">Google Search with GET</a></li>
+            <li><a href="#section-four" title="Section 4">Form with POST</a></li>
+            <li><a href="#section-five" title="Section 5">Form with textarea, select and placeholders</a></li>
+            <li><a href="#section-six" title="Section 6">Form with required attributes and different types</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section id="section-one">
+        <h1>Basic form</h1>
+        <form>
+          <label for="input-one">First input</label>
+          <input name="input-one" type="text" />
+          <label for="input-two">Second input</label>
+          <input name="input-two" type="text" />
+          <button>Submit form</button>
+        </form>
+      </section>
+      <section id="section-two">
+        <h1>Form with GET</h1>
+        <form method="GET" action="/">
+          <label for="input-one">First input</label>
+          <input name="input-one" type="text" />
+          <label for="input-two">Second input</label>
+          <input name="input-two" type="text" />
+          <button>Submit form</button>
+        </form>
+      </section>
+      <section id="section-three">
+        <h1>Google Search with GET</h1>
+        <form method="GET" action="https://google.com/search">
+          <label for="q">Search Google</label>
+          <input name="q" type="text" />
+          <button>Submit form</button>
+        </form>
+      </section>
+      <section id="section-four">
+        <h1>Form with POST</h1>
+        <form method="POST" action="/handle-form">
+          <label for="input-one">First input</label>
+          <input name="input-one" type="text" />
+          <button>Submit form</button>
+        </form>
+      </section>
+      <section id="section-five">
+          <h1>Form with textarea, select and placeholders</h1>
+          <form>
+            <label for="input-one">First input</label>
+            <input name="input-one" type="text" placeholder="Enter short input" />
+
+            <label for="input-two">Textarea</label>
+            <textarea name="input-two" placeholder="Enter lots of input"></textarea>
+
+            <label for="select-one">Choose one:</label>
+            <select name="select-one">
+              <option value="option-one">Option 1</option>
+              <option value="option-two">Option 2</option>
+              <option value="option-three">Option 3</option>
+            </select>
+            <button>Submit form</button>
+          </form>
+        </section>
+        <section id="section-six">
+            <h1>Form with required attributes and different "types"</h1>
+            <form>
+              <label for="email">Your email</label>
+              <input name="email" type="email" required placeholder="Enter your email" />
+              <label for="password">Your password</label>
+              <input name="password" type="password" required placeholder="Enter your password" />
+  
+              <button>Submit form</button>
+            </form>
+          </section>
+      <footer>
+        <p>Copyright &copy; Your Website 2019</p>
+      </footer>
+    </main>
+  </body>
+</html>

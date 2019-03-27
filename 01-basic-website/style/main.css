@@ -1,0 +1,46 @@
+html, body {
+  margin: 0;
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+/* https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* System Fonts as used by GitHub */
+/* https://css-tricks.com/snippets/css/system-font-stack/ */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+
+
+header, section, footer {
+  padding: 1rem;
+}
+
+header {
+  position: fixed;
+  width: 30%;
+  height: 100vh;
+  background: #bada55;
+}
+
+section {
+  width: 70%;
+  position: relative;
+  margin-left: 30%;
+  min-height: 100vh;
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  background: #55adab;
+}
