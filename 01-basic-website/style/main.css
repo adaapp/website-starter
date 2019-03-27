@@ -17,6 +17,10 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
+a.go-home {
+  display: block;
+}
+
 a.skip-to-content {
   position: absolute;
   top: 1rem;
@@ -43,7 +47,17 @@ header {
   position: fixed;
   width: 30%;
   height: 100vh;
-  background: var(--ada-orange);
+  border-right: 1rem solid var(--ada-orange);
+}
+
+header h1 {
+  display: inline-block;
+  border-bottom: 0.5rem dotted var(--ada-blue);
+}
+
+section h1 {
+  display: inline-block;
+  border-bottom: 0.25rem dotted var(--ada-yellow);
 }
 
 section {
@@ -51,7 +65,7 @@ section {
   position: relative;
   margin-left: 30%;
   min-height: 100vh;
-  background: var(--ada-grey);
+  background: white;
 }
 
 footer {
@@ -59,5 +73,6 @@ footer {
   width: 100%;
   bottom: 0;
   text-align: center;
-  background: var(--ada-green);
+  background: white;
+  border-top: 0.75rem solid var(--ada-green)
 }
