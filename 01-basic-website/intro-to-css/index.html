@@ -13,9 +13,11 @@
     />
   </head>
   <body>
+    <a class="skip-to-content" href="#selectors">Skip to main content</a>
     <main>
       <header>
-        <h1><a href="./index.html">Intro to CSS</a></h1>
+        <a href="../index.html" title="Go Home">Home</a>
+        <h1>Intro to CSS</h1>
         <h2>
           <a
             href="https://github.com/adaapp/website-starter/blob/master/01-basic-website/intro-to-css/index.html"
@@ -27,11 +29,57 @@
         <nav>
           <ul>
             <li>
+              <a href="#selectors" title="Selectors">Selectors</a>
+            </li>
+            <li>
               <a href="#the-box-model" title="The Box Model">The Box Model</a>
             </li>
           </ul>
         </nav>
       </header>
+      <section id="selectors" class="example-css">
+        <style>
+          .example-css h1 {
+            font-family: cursive;
+          }
+          .example-css p {
+            font-size: 1.4rem;
+          }
+          .example-css p:first-of-type {
+            font-size: 1.6rem;
+            font-weight: bold;
+          }
+          .example-css li.selected {
+            color: #ff33ff;
+          }
+        </style>
+
+        <h1>Selectors</h1>
+        <p>I am the first paragraph.</p>
+        <p>I am the second paragraph.</p>
+        <p>I am the third paragraph.</p>
+        <ul>
+          <li>I am a list item</li>
+          <li class="selected">I am a list item</li>
+          <li>I am a list item</li>
+        </ul>
+
+        <pre>      
+          .example-css h1 {
+            font-family: cursive;
+          }
+          .example-css p {
+            font-size: 1.4rem;
+          }
+          .example-css p:first-of-type {
+            font-size: 1.6rem;
+            font-weight: bold;
+          }
+          .example-css li.selected {
+            color: #ff33ff;
+          }          
+        </pre>
+      </section>
       <section id="the-box-model">
         <h1>The Box Model</h1>
         <style>
