@@ -66,6 +66,7 @@ section {
   margin-left: 30%;
   min-height: 100vh;
   background: white;
+  clear: left;
 }
 
 footer {
