@@ -37,67 +37,100 @@
           </ul>
         </nav>
       </header>
-      <section id="selectors" class="example-css">
+      <section id="selectors">
         <style>
-          .example-css h1 {
-            font-family: cursive;
+          section div {
+            padding: 1rem;
+            width: 50%;
           }
-          .example-css p {
+          .example-html {
+            float: left;
+            border: 1px solid #eee;
+          }
+          .example-css {
+            float: right;
+            border: 1px dotted #eee;
+          }
+          .example-html h1,
+          .example-css h1 {
+            font-size: 3rem;
+            margin-top: 0;
+          }
+          .example-html p {
             font-size: 1.4rem;
           }
-          .example-css p:first-of-type {
+          .example-html p:first-of-type {
             font-size: 1.6rem;
             font-weight: bold;
           }
-          .example-css li.selected {
+          .example-html li.selected {
             color: #ff33ff;
+          }
+          .example-html a:hover {
+            text-decoration: underline;
+            font-weight: bold;
           }
         </style>
+        <div class="example-html">
+          <h1>Example HTML</h1>
+          <p>I am the first paragraph.</p>
+          <p>I am the second paragraph.</p>
+          <p>I am the third paragraph.</p>
+          <ul>
+            <li>I am a list item</li>
+            <li class="selected">I am a list item</li>
+            <li>I am a list item</li>
+          </ul>
+          <a href="#selectors">I am a link</a>
+        </div>
 
-        <h1>Selectors</h1>
-        <p>I am the first paragraph.</p>
-        <p>I am the second paragraph.</p>
-        <p>I am the third paragraph.</p>
-        <ul>
-          <li>I am a list item</li>
-          <li class="selected">I am a list item</li>
-          <li>I am a list item</li>
-        </ul>
-
-        <pre>      
-          .example-css h1 {
-            font-family: cursive;
-          }
-          .example-css p {
-            font-size: 1.4rem;
-          }
-          .example-css p:first-of-type {
-            font-size: 1.6rem;
-            font-weight: bold;
-          }
-          .example-css li.selected {
-            color: #ff33ff;
-          }          
-        </pre>
+        <div class="example-css">
+          <h1>Example CSS</h1>
+          <pre>
+              .example-html h1,
+              .example-css h1 {
+                font-size: 3rem;
+                margin-top: 0;
+              }
+              .example-html p {
+                font-size: 1.4rem;
+              }
+              .example-html p:first-of-type {
+                font-size: 1.6rem;
+                font-weight: bold;
+              }
+              .example-html li.selected {
+                color: #ff33ff;
+              }
+              .example-html a:hover {
+                text-decoration: underline;
+                font-weight: bold;
+              }
+          </pre>
+        </div>
       </section>
       <section id="the-box-model">
-        <h1>The Box Model</h1>
-        <style>
-          .framed-image {
-            max-width: 100%;
-            width: 10rem;
-            background: #aaffff;
-            padding: 1rem;
-            border: 1px solid #9d9aff;
-            margin: 2rem;
-          }
-        </style>
-        <img
-          class="framed-image"
-          src="https://cdn.pixabay.com/photo/2015/08/14/08/29/images-888133_960_720.jpg"
-          alt="A description of my image"
-        />
-        <pre>
+        <div class="example-html">
+          <h1>The Box Model</h1>
+          <style>
+            .framed-image {
+              max-width: 100%;
+              width: 10rem;
+              background: #aaffff;
+              padding: 1rem;
+              border: 1px solid #9d9aff;
+              margin: 2rem;
+            }
+          </style>
+          <img
+            class="framed-image"
+            src="https://cdn.pixabay.com/photo/2015/08/14/08/29/images-888133_960_720.jpg"
+            alt="A description of my image"
+          />
+        </div>
+        <div class="example-css">
+          <h1>Box Model CSS</h1>
+          <pre>
           .framed-image {
             max-width: 100%;
             width: 10rem;
@@ -107,7 +140,8 @@
             margin: 2rem;
           }
       </pre
-        >
+          >
+        </div>
       </section>
       <footer>
         <p>Copyright &copy; Your Website 2019</p>
