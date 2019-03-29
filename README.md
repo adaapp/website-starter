@@ -1,6 +1,8 @@
 # website-starter
 
-A starter repo for Launchpad websites
+A starter repo for Launchpad websites.
+
+You can [browse the 01-basic-website here](https://adaapp.github.io/website-starter/01-basic-website) as it is hosted on Github Pages.
 
 ## About this repository
 
